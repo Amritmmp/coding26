@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Video</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!--our css-->
+	<link href="css/site.css" rel="stylesheet" type="text/css">
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+	<!----------collapsing navbar right from w3schools--------------------------------------->
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Media</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Audio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="video.html">Video</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="videoBackground.html">Video Background</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!---------------------------------------Header--------------------------------------->
+	<header>
+		<div class="container-fluid bg-danger text-white">
+
+			<div class="row py-5 vh-50">
+
+				<!----------------------------------hero text--------------------------------->
+				<div class="col-lg-6 m-auto">
+
+					<h1>HTML Video</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem excepturi error, odio, itaque
+						repellendus unde libero magni reprehenderit magnam optio minus quos deleniti. Dolor quasi
+						reprehenderit non accusamus amet, sed nihil? Adipisci quas labore necessitatibus nostrum, natus
+						mollitia beatae temporibus suscipit ab deleniti eos facere accusantium quod officia. Obcaecati
+						fugit
+						laboriosam, asperiores.</p>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<!-----------------------------------Video Section------------------------------------->
+	<section id="content" class="bg-dark text-white py-5">
+		<div class="container">
+			<div class="row my-5">
+				<div class="col-sm-6 mx-auto">
+
+					<h4>Getting Video on a Web Page</h4>
+
+					<p>There are three supported audio formats but the best choices are MP4, and WebM. Lorem ipsum dolor
+						sit amet, consectetur adipisicing elit. Temporibus similique laboriosam cumque autem iure cum
+						animi ex natus illo modi tenetur voluptatem iusto qui saepe quas eius, vero quibusdam ratione.
+					</p>
+
+					<!-----------------------------Put your Video file here--------------->
+					<video class="img-fluid" controls width="1920" height="1440">
+						<source src="assets/video/leemons.webm" type="video/webm">
+						<source src="assets/video/leemons.mp4" type="video/mp4">
+						Your browser doesn't support the video tag.
+					</video>
+
+
+					<!------------------------------YouTube Videos----------------------->
+					<h4>YouTube Video</h4>
+
+					<p>If you are struggling with compression, YouTube embeds might be your best choice! Lorem ipsum
+						dolor sit amet, consectetur adipisicing elit. Temporibus similique laboriosam cumque autem iure
+						cum animi ex natus illo modi tenetur voluptatem iusto qui saepe quas eius, vero quibusdam
+						ratione.</p>
+
+					<!-----------------------------Put your YouTube Embed code here--------------->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jS_uznSJ4Sk?si=kt6QaAPw5HnSQmIM"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
