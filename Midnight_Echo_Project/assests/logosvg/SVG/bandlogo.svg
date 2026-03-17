@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669.11 485.04">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 60px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-3, .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 322.68)"><tspan x="0" y="0">THE MIDNIGHT ECHO</tspan></text>
+    <path class="cls-3" d="M296.9,350.52h126.39c0,71.05-57.06,129.52-126.39,129.52s-125.97-57.98-126.39-128.73l126.39-.79Z"/>
+    <path class="cls-3" d="M298.4,258.29l-124.89-.04c.03-65.67,56.4-119.7,124.89-119.7,68.51,0,124.89,54.05,124.89,119.74h-124.89Z"/>
+    <ellipse class="cls-3" cx="298.4" cy="81.46" rx=".91" ry="56.51"/>
+    <ellipse class="cls-2" cx="296.9" cy="17.13" rx="14.48" ry="12.13"/>
+  </g>
+</svg>

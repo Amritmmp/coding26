@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Midnight Echo</title>
+
+    <!-- Bootstrap 5- Latest compiled and minified CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--lightbox css-->
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!--animate on scroll css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/mystyle.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <!------------Collapsive Navbar------------>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-2 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src="assests/logosvg/SVG/bandlogo.svg" alt="band logo" style="height: 75px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#music">MUSIC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#tours">TOURS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-------------=-------------Header--------------------------->
+
+    <header class="p-0 d-flex justify-content-center align-items-center position-relative">
+
+        <video autoplay muted loop playsinline>
+            <source src="assests/Video_background/backgroundvideo.mp4" type="video/mp4">
+            <source src="assests/Video_background/backgroundvideo.webm" type="video/webm">
+            Your browser doesn't support video background.
+        </video>
+
+        <div class="container p-5 position-absolute text-center">
+            <h1 class="text-white display-1 fw-bold">
+                THE MIDNIGHT ECHO
+            </h1>
+
+
+            <button type="button" class="btn btn-outline-light mt-4 px-5 py-2">LISTEN NOW</button>
+        </div>
+    </header>
+
+
+    <!--------------------------------------------------------GSAP--------------------------------------------------->
+
+    <section class="bg-black">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <svg id="Text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 668.53 481.91"
+                        style="max-width:600px; width:100%; height:auto;">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <g id="fulllogo">
+                            <g id="circle">
+                                <path class="cls-1"
+                                    d="M297.66,351.39h126.39c0,71.05-57.06,129.52-126.39,129.52s-125.97-57.98-126.39-128.73l126.39-.79Z" />
+                                <path class="cls-1"
+                                    d="M299.16,259.16l-124.89-.04c.03-65.67,56.4-119.7,124.89-119.7,68.51,0,124.89,54.05,124.89,119.74h-124.89Z" />
+                            </g>
+                            <g id="antenna">
+                                <ellipse class="cls-1" cx="299.16" cy="82.33" rx=".91" ry="56.51" />
+                                <ellipse class="cls-1" cx="300.07" cy="13.13" rx="14.48" ry="12.13" />
+                            </g>
+                            <g id="text">
+                                <path class="cls-1" d="M14.44,323.55v-34.08H1v-7.92h36.6v7.92h-13.44v34.08h-9.72Z" />
+                                <path class="cls-1"
+                                    d="M42.82,323.55v-42h9.78v42h-9.78ZM51.82,306.33v-8.22h20.52v8.22h-20.52ZM71.62,323.55v-42h9.72v42h-9.72Z" />
+                                <path class="cls-1"
+                                    d="M91.3,323.55v-42h31.74v7.8h-22.08v26.4h22.86v7.8h-32.52ZM100.24,306.03v-7.62h20.22v7.62h-20.22Z" />
+                                <path class="cls-1"
+                                    d="M148.54,323.55v-42h8.04l17.88,29.64h-4.26l17.52-29.64h8.1v42h-9.06l-.12-28.02h1.8l-14.16,23.52h-4.32l-14.34-23.52h1.98v28.02h-9.06Z" />
+                                <path class="cls-1" d="M205.84,323.55v-42h9.78v42h-9.78Z" />
+                                <path class="cls-1"
+                                    d="M225.52,323.55v-42h19.08c4.56,0,8.58.87,12.06,2.61s6.2,4.18,8.16,7.32c1.96,3.14,2.94,6.83,2.94,11.07s-.98,7.93-2.94,11.07c-1.96,3.14-4.68,5.58-8.16,7.32s-7.5,2.61-12.06,2.61h-19.08ZM235.3,315.63h8.82c2.8,0,5.23-.53,7.29-1.59,2.06-1.06,3.66-2.58,4.8-4.56,1.14-1.98,1.71-4.29,1.71-6.93s-.57-5-1.71-6.96c-1.14-1.96-2.74-3.47-4.8-4.53-2.06-1.06-4.49-1.59-7.29-1.59h-8.82v26.16Z" />
+                                <path class="cls-1"
+                                    d="M275.08,323.55v-42h8.04l24.78,30.24h-3.9v-30.24h9.6v42h-8.04l-24.78-30.24h3.9v30.24h-9.6Z" />
+                                <path class="cls-1" d="M323.56,323.55v-42h9.78v42h-9.78Z" />
+                                <path class="cls-1"
+                                    d="M363.52,324.27c-3.32,0-6.38-.53-9.18-1.59-2.8-1.06-5.22-2.57-7.26-4.53-2.04-1.96-3.63-4.26-4.77-6.9-1.14-2.64-1.71-5.54-1.71-8.7s.57-6.06,1.71-8.7c1.14-2.64,2.75-4.94,4.83-6.9,2.08-1.96,4.52-3.47,7.32-4.53,2.8-1.06,5.88-1.59,9.24-1.59,3.72,0,7.07.62,10.05,1.86,2.98,1.24,5.49,3.04,7.53,5.4l-6.18,5.76c-1.56-1.64-3.24-2.85-5.04-3.63-1.8-.78-3.78-1.17-5.94-1.17-2,0-3.84.33-5.52.99-1.68.66-3.13,1.59-4.35,2.79-1.22,1.2-2.16,2.62-2.82,4.26-.66,1.64-.99,3.46-.99,5.46s.33,3.71.99,5.37c.66,1.66,1.6,3.09,2.82,4.29,1.22,1.2,2.66,2.14,4.32,2.82,1.66.68,3.49,1.02,5.49,1.02s3.79-.32,5.61-.96c1.82-.64,3.59-1.7,5.31-3.18l5.52,7.02c-2.32,1.76-4.98,3.09-7.98,3.99s-6,1.35-9,1.35ZM380.5,318.93l-8.88-1.32v-15.72h8.88v17.04Z" />
+                                <path class="cls-1"
+                                    d="M389.5,323.55v-42h9.78v42h-9.78ZM398.5,306.33v-8.22h20.52v8.22h-20.52ZM418.3,323.55v-42h9.72v42h-9.72Z" />
+                                <path class="cls-1"
+                                    d="M446.67,323.55v-34.08h-13.44v-7.92h36.6v7.92h-13.44v34.08h-9.72Z" />
+                                <path class="cls-1"
+                                    d="M492.03,323.55v-42h31.74v7.8h-22.08v26.4h22.86v7.8h-32.52ZM500.97,306.03v-7.62h20.22v7.62h-20.22Z" />
+                                <path class="cls-1"
+                                    d="M552.39,324.27c-3.24,0-6.25-.53-9.03-1.59-2.78-1.06-5.19-2.57-7.23-4.53-2.04-1.96-3.63-4.26-4.77-6.9-1.14-2.64-1.71-5.54-1.71-8.7s.57-6.06,1.71-8.7c1.14-2.64,2.74-4.94,4.8-6.9,2.06-1.96,4.48-3.47,7.26-4.53,2.78-1.06,5.79-1.59,9.03-1.59,3.64,0,6.94.63,9.9,1.89,2.96,1.26,5.44,3.11,7.44,5.55l-6.3,5.76c-1.4-1.64-2.99-2.88-4.77-3.72-1.78-.84-3.71-1.26-5.79-1.26-1.96,0-3.76.33-5.4.99-1.64.66-3.06,1.59-4.26,2.79-1.2,1.2-2.13,2.62-2.79,4.26-.66,1.64-.99,3.46-.99,5.46s.33,3.82.99,5.46c.66,1.64,1.59,3.06,2.79,4.26,1.2,1.2,2.62,2.13,4.26,2.79,1.64.66,3.44.99,5.4.99,2.08,0,4.01-.43,5.79-1.29,1.78-.86,3.37-2.11,4.77-3.75l6.3,5.76c-2,2.44-4.48,4.3-7.44,5.58-2.96,1.28-6.28,1.92-9.96,1.92Z" />
+                                <path class="cls-1"
+                                    d="M575.73,323.55v-42h9.78v42h-9.78ZM584.73,306.33v-8.22h20.52v8.22h-20.52ZM604.53,323.55v-42h9.72v42h-9.72Z" />
+                                <path class="cls-1"
+                                    d="M644.61,324.27c-3.32,0-6.38-.54-9.18-1.62-2.8-1.08-5.24-2.6-7.32-4.56-2.08-1.96-3.69-4.26-4.83-6.9-1.14-2.64-1.71-5.52-1.71-8.64s.57-6.05,1.71-8.67c1.14-2.62,2.75-4.91,4.83-6.87,2.08-1.96,4.51-3.48,7.29-4.56,2.78-1.08,5.83-1.62,9.15-1.62s6.37.53,9.15,1.59c2.78,1.06,5.21,2.57,7.29,4.53,2.08,1.96,3.69,4.26,4.83,6.9,1.14,2.64,1.71,5.54,1.71,8.7s-.57,6.01-1.71,8.67c-1.14,2.66-2.75,4.97-4.83,6.93-2.08,1.96-4.51,3.47-7.29,4.53-2.78,1.06-5.81,1.59-9.09,1.59ZM644.55,316.05c1.88,0,3.61-.33,5.19-.99,1.58-.66,2.97-1.6,4.17-2.82,1.2-1.22,2.13-2.64,2.79-4.26.66-1.62.99-3.43.99-5.43s-.33-3.81-.99-5.43c-.66-1.62-1.59-3.04-2.79-4.26-1.2-1.22-2.59-2.16-4.17-2.82-1.58-.66-3.31-.99-5.19-.99s-3.62.33-5.22.99c-1.6.66-2.99,1.6-4.17,2.82-1.18,1.22-2.1,2.64-2.76,4.26-.66,1.62-.99,3.43-.99,5.43s.33,3.81.99,5.43c.66,1.62,1.58,3.04,2.76,4.26,1.18,1.22,2.57,2.16,4.17,2.82,1.6.66,3.34.99,5.22.99Z" />
+                            </g>
+                        </g>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!----------------------ABOUT SECTION-------------------------->
+
+    <section id="about" class="bg-black text-white py-5 fs-5">
+        <div class="container">
+
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="display-4 fw-bold">THE STORY</h2>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+
+                <div class="col-sm-6 p-4" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="300">
+                    <p>The Midnight Echo is an indie-rock collective born in the shadows of the city.</p>
+                    <p>Our sound is a blend of atmospheric melodies and raw energy, capturing the essence of life after
+                        dark. What started as a basement jam session has now turned into a movement.</p>
+                    <p>Every track we produce tells a story of the streets we walk and the silence we find in the chaos.
+                        Our mission is to create a multi-modal experience where music, visuals, and storytelling
+                        collide.</p>
+                    <p>From late-night basement rehearsals to the bright lights of the local stage, we stay true to our
+                        roots—noisy, melodic, and unapologetically real. The bands sound combines deep guitar riffs,
+                        ambient synths, and powerful vocals that tell stories about dreams, memories, and
+                        self-discovery. Each song by The Midnight Echo aims to take listeners on a journey, creating a
+                        mood that feels both nostalgic and modern at the same time.</p>
+                    <button type="button" class="btn btn-outline-info mt-3">LEARN MORE</button>
+                </div>
+
+                <div class="col-sm-6 p-4 text-center" data-aos="fade-right" data-aos-duration="3000"
+                    data-aos-offset="300">
+                    <img src="assests/images/about.jpg" alt="About Image" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------Music Section---------------------------------->
+    <section id="music" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row mb-5" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <h2 class="display-4">LATEST HITS</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+
+                <div class="col-sm-5 mb-5 text-center" data-aos="zoom-in-right" data-aos-duration="3000"
+                    data-aos-delay="200">
+                    <img src="assests/images/guitar.jpg" alt="Song One" class="img-fluid mb-4 rounded shadow">
+
+                    <h4 class="mt-2">Midnight Rain</h4>
+                    <p class="text-secondary">Single - 2026</p>
+
+                    <audio controls>
+                        <source src="assests/audio/song1.ogg" type="audio/ogg">
+                        <source src="assests/audio/song1.mp3" type="audio/mpeg">
+                        Your browser doesn't support the audio element.
+                    </audio>
+                </div>
+
+                <div class="col-sm-5 mb-5 text-center" data-aos="zoom-in-left" data-aos-duration="3000"
+                    data-aos-delay="200">
+                    <img src="assests/images/music34.jpg" alt="Song Two" class="img-fluid mb-4 rounded shadow">
+
+                    <h4 class="mt-2">Neon Shadows</h4>
+                    <p class="text-secondary">Album Track - 2026</p>
+
+                    <audio controls>
+                        <source src="assests/audio/song2.ogg" type="audio/ogg">
+                        <source src="assests/audio/song2.mp3" type="audio/mpeg">
+                        Your browser doesn't support the audio element.
+                    </audio>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!----------------Gallery-------------------------->
+
+    <section id="gallery" class="bg-black text-white py-5">
+        <div class="container">
+
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold">GALLERY</h2>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-4 mb-4" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="300">
+                    <a href="assests/images/bigimages/bigimage1.jpg" data-lightbox="band-gallery"
+                        data-title="Live at Neon arena" data-alt="neon arena">
+                        <img src="assests/images/smallimage1.jpg" class="img-fluid rounded shadow-sm"
+                            alt="Live Concert">
+                    </a>
+                    <p class="mt-2 mb-0">Live at Neon Arena</p>
+
+                </div>
+
+                <div class="col-sm-4 mb-4" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="300">
+                    <a href="assests/images/bigimages/bigimages4.jpg" data-lightbox="band-gallery"
+                        data-title="behind the Scenes" data-alt="Studio Session">
+                        <img src="assests/images/smallimage2.jpg" class="img-fluid rounded shadow-sm"
+                            alt="Band Rehearsal">
+                    </a>
+                    <p class="mt-2 mb-0">Behind the Scenes</p>
+
+                </div>
+
+                <div class="col-sm-4 mb-4" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="300">
+                    <a href="assests/images/bigimages/bigimages2.jpg" data-lightbox="band-gallery"
+                        data-title="Solo Session" data-alt="Guitar Solo">
+                        <img src="assests/images/smallimages3.jpg" class="img-fluid rounded shadow-sm"
+                            alt="Guitar Solo">
+                    </a>
+                    <p class="mt-2 mb-0">The Solo Session</p>
+
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-4 mb-4" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="300">
+                    <a href="assests/images/bigimages/bigimage3.jpg" data-lightbox="band-gallery"
+                        data-title="echoes of soul" data-alt="lead singer">
+                        <img src="assests/images/smallimage4.jpg" class="img-fluid rounded shadow-sm" alt="Lead Singer">
+                    </a>
+                    <p class="mt-2 mb-0">Echoes of Soul</p>
+
+                </div>
+
+                <div class="col-sm-4 mb-4" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="300">
+                    <a href="assests/images/bigimages/bigimage5.jpg" data-lightbox="band-gallery"
+                        data-title="The Rytham master" data-alt="Drummer">
+                        <img src="assests/images/smallimage5.jpg" class="img-fluid rounded shadow-sm" alt="Drummer">
+                    </a>
+                    <p class="mt-2 mb-0">The Rhythm Master</p>
+
+                </div>
+
+                <div class="col-sm-4 mb-4" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="300">
+                    <a href="assests/images/bigimages/bigimage6.jpg" data-lightbox="band-gallery"
+                        data-title="Band ceremony" data-alt="band Crowd">
+                        <img src="assests/images/smallimage6.jpg" class="img-fluid rounded shadow-sm" alt="Band Crowd">
+                    </a>
+                    <p class="mt-2 mb-0">Midnight Fans</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-------------------------------Tours----------------------------->
+    <section id="tour" class="bg-dark text-white py-5">
+        <div class="container">
+
+            <h2 class="display-4 text-center mb-5" data-aos="fade-down">TOUR DATES</h2>
+
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="100">
+                    <div class="p-4 text-center">
+                        <h5>Oct 15, 2026</h5>
+                        <p class="mb-1 fw-bold">Toronto, ON</p>
+
+                        <button class="btn btn-outline-info btn-sm w-100 mt-2">Get Tickets</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="200">
+                    <div class="p-4 text-center">
+                        <h5>Oct 22, 2026</h5>
+                        <p class="mb-1 fw-bold">Vancouver, BC</p>
+
+                        <button class="btn btn-outline-info btn-sm w-100 mt-2">Get Tickets</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="300">
+                    <div class="p-4 text-center">
+                        <h5>Nov 05, 2026</h5>
+                        <p class="mb-1 fw-bold">Montreal, QC</p>
+
+                        <button class="btn btn-outline-info btn-sm w-100 mt-2">Get Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-----------------------------------------FOOTER------------------------------------------->
+
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <img class="img-fluid" src="assests/logosvg/SVG/bandlogo.svg" alt="Logo">
+                </div>
+
+                <div class="col-sm-4 text-end">
+                    <h5>LINKS</h5>
+                    <p><a href="#about" class="text-white">About Us</a></p>
+                    <p><a href="#music" class="text-white">Music</a></p>
+                    <p><a href="#gallery" class="text-white">Gallery</a></p>
+                    <p><a href="#tour" class="text-white">Tour Dates</a></p>
+
+
+                </div>
+
+                <div class="col-sm-4 text-end">
+                    <h5>SOCIAL MEDIA</h5>
+                    <i class="fa fa-facebook fa-2x"></i>
+                    <i class="fa fa-instagram fa-2x mx-3"></i>
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!---------------------------libraries------------------->
+
+    <!--lightbox js-->
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+    <!--animate on scroll js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--animate on scroll initation-->
+    <script>
+        AOS.init();
+    </script>
+
+    <!------------------------CDNs-------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>
+
+
+    <!-----------------------Custom JS--------------------------------------->
+    <script src="javascript/svgDraw.js"></script>
+
+
+
+
+
+</body>
+
+</html>

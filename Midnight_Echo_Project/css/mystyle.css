@@ -1,0 +1,33 @@
+ header{
+    background-color: black;
+    position:relative;
+
+    
+    
+   
+}
+ header video {
+    width: 100%;    
+    z-index: 0; 
+   
+}
+
+   
+
+nav img{
+    min-width: 70px;
+    
+}
+#circle,
+#antenna,
+#text{
+visibility:hidden;
+}
+
+
+
+.cls-1{
+stroke:#ffffff;
+stroke-width:2;
+fill:none;
+}
